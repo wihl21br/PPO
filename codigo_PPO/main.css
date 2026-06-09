@@ -1,0 +1,82 @@
+body {
+  padding: 0.5rem;
+  min-height: 100svh;
+  background-color: var(--color-bg-hi);
+  width: 100%;
+  margin-top: -4rem;
+  padding-top: 4rem;
+  margin-left: -0.1rem;
+  padding-left: 0.1rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#template {
+  display: grid;
+  height: 10vh;
+  width: 100%;
+  background-color: rgb(52, 204, 6);
+  color: white;
+  margin-left: 0.8px;
+}
+
+.Nomecategoria {
+  margin-top: 40px;
+  margin-left: 8px;
+  border-color: black;
+  #adicionar-categoria {
+    background-color: green;
+    color: white;
+  }
+ 
+}
+
+.Menu { 
+  margin-left: 400px;
+  max-width: 800px ;
+  min-width: none;
+  .info {
+    background-color: rgb(12, 189, 12);
+    display: grid;
+    grid-template-areas: "nome div-verde excluir";
+    height: 80px;
+    .nome{
+      grid-area: nome;
+      h1 {
+      color: black;
+      background-color: rgb(197, 197, 197);
+    }
+    }.div-excluir-categoria {
+      grid-area: excluir;
+      #excluir-categoria {
+      background-color: #d10e0e;
+      color: white;
+      border: none;
+    }
+    }
+    .div-verde1{
+      grid-area: div-verde;
+      background-color: rgb(12, 189, 12);
+    }
+    
+}
+  .personalizar {
+    #excluir-item {
+      background-color: #124dee;
+      color: white;
+      border: none;
+    }
+  }
+  .div-item {
+    height: 200px;
+    border: 1px solid black;
+
+    #adicao-item {
+      background-color: #37ee12;
+      color: white;
+      border: none;
+    }
+  }
+}
