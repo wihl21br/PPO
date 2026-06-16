@@ -23,6 +23,10 @@ body {
 }
 
 .Nomecategoria {
+  display: flex;
+  justify-content: center; 
+  align-items: center;  
+  margin-bottom: 30px;
   margin-top: 40px;
   margin-left: 8px;
   border-color: black;
@@ -48,13 +52,10 @@ body {
       color: black;
       background-color: rgb(197, 197, 197);
     }
-    }.div-excluir-categoria {
-      grid-area: excluir;
-      #excluir-categoria {
+    }#excluir-categoria {
       background-color: #d10e0e;
       color: white;
       border: none;
-    }
     }
     .div-verde1{
       grid-area: div-verde;
