@@ -24,12 +24,9 @@ body {
 
 .Nomecategoria {
   display: flex;
-  justify-content: center; 
-  align-items: center;  
   margin-bottom: 30px;
   margin-top: 40px;
   margin-left: 8px;
-  border-color: black;
   #adicionar-categoria {
     background-color: green;
     color: white;
@@ -38,9 +35,11 @@ body {
 }
 
 .Menu { 
-  margin-left: 400px;
-  max-width: 800px ;
-  min-width: none;
+  border-color: black;
+  margin-left: 500px;
+  margin-top: -100px;
+  margin-bottom: 100px;
+  width: 480px;
   .info {
     background-color: rgb(12, 189, 12);
     display: grid;
@@ -52,16 +51,10 @@ body {
       color: black;
       background-color: rgb(197, 197, 197);
     }
-    }#excluir-categoria {
-      background-color: #d10e0e;
+    }#excluir-categoria{
+    background-color: #d10e0e;
       color: white;
-      border: none;
-    }
-    .div-verde1{
-      grid-area: div-verde;
-      background-color: rgb(12, 189, 12);
-    }
-    
+      border: none;}
 }
   .personalizar {
     #excluir-item {
@@ -81,3 +74,4 @@ body {
     }
   }
 }
+
