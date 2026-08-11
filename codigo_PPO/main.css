@@ -1,77 +1,138 @@
-body {
-  padding: 0.5rem;
-  min-height: 100svh;
-  background-color: var(--color-bg-hi);
-  width: 100%;
-  margin-top: -4rem;
-  padding-top: 4rem;
-  margin-left: -0.1rem;
-  padding-left: 0.1rem;
-}
-
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
-
-#template {
-  display: grid;
-  height: 10vh;
-  width: 100%;
-  background-color: rgb(52, 204, 6);
-  color: white;
-  margin-left: 0.8px;
+body {
+    padding: 0.5rem;
+    min-height: 100svh;
+    width: 100%;
+    margin-top: -4rem;
+    padding-top: 5rem;
+}#template {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    padding: 0 20px;
+    border-radius: 15px;
+    background-color: rgb(2, 91, 151);
+    color: rgb(253, 253, 253);
+    box-shadow:  10px 10px 15px rgba(0, 0, 0, 0.3);
 }
-
 .Nomecategoria {
-  display: flex;
-  margin-bottom: 30px;
-  margin-top: 40px;
-  margin-left: 8px;
-  #adicionar-categoria {
-    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 40px 0;
+}
+#nova-categoria {
+    width: 300px;
+    padding: 8px;
+    border: 2px solid rgb(6, 131, 204);
+    
+}
+
+#adicionar-categoria {
+    padding: 8px 10px;
+    background-color: rgb(6, 131, 204);
     color: white;
-  }
- 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.Menu { 
-  border-color: black;
-  margin-left: 500px;
-  margin-top: -100px;
-  margin-bottom: 100px;
-  width: 480px;
-  .info {
-    background-color: rgb(12, 189, 12);
+#Valor_total {
+    margin-left: 8px;
+}
+.Menu {
+    
+    width: 490px;
+    margin-bottom: 25px;
+
+    border: 2px solid rgb(6, 131, 204);
+    border-radius: 10px;
+
+    overflow: hidden;
+    background-color: white;
+}
+.info {
     display: grid;
-    grid-template-areas: "nome div-verde excluir";
-    height: 80px;
-    .nome{
-      grid-area: nome;
-      h1 {
-      color: black;
-      background-color: rgb(197, 197, 197);
-    }
-    }#excluir-categoria{
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
+    min-height: 80px;
+    padding: 0 15px;
+    background-color: rgb(6, 131, 204);
+}
+#excluir-categoria {
+    padding: 7px 12px;
     background-color: #d10e0e;
-      color: white;
-      border: none;}
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
-  .personalizar {
-    #excluir-item {
-      background-color: #124dee;
-      color: white;
-      border: none;
-    }
-  }
-  .div-item {
-    height: 200px;
-    border: 1px solid black;
-
-    #adicao-item {
-      background-color: #37ee12;
-      color: white;
-      border: none;
-    }
-  }
+.personalizar {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px;
 }
 
+.personalizar input,
+.personalizar textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.personalizar textarea {
+    min-height: 60px;
+    resize: vertical;
+}
+#container-categoria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+}
+#item  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    margin-bottom: 8px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#excluir-item {
+    padding: 6px 10px;
+    background-color: rgb(6, 131, 204);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.div-item {
+    min-height: 100px;
+    padding: 15px;
+    border-top: 1px solid #ccc;
+}
+#adicionar-item {
+    padding: 8px 15px;
+    background-color: rgb(6, 131, 204);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    opacity: 0.50;
+}
+#nome-grupo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
