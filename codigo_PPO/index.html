@@ -1,9 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Smart Expense Tracker</title>
+
     <link rel="stylesheet" href="main.css" />
   </head>
 
@@ -11,14 +14,45 @@
     <div id="template">
       <h1>Smart Expense Tracker</h1>
     </div>
+    <div id="painel-orcamento">
+      <div class="lado-orcamento">
+        <div class="titulo-orcamento">
+          <span id="luz-orcamento"> 💡 </span>
+
+          <div>
+            <small> ORÇAMENTO </small>
+
+            <h2 id="orcamento">R$ 0,00</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="lado-gasto">
+        <div>
+          <small> GASTOU </small>
+
+          <h2 id="gasto">R$ 0,00</h2>
+        </div>
+      </div>
+
+      <div class="config-orcamento">
+        <input type="number"id="input-orcamento"step="0.01"placeholder="Digite seu orçamento"/>
+        <button id="salvar-orcamento">salvar</button>
+      </div>
+    </div>
+
+    <h1 id="Valor_total">Valor total:</h1>
+
+    <!-- Categoria -->
+
     <div class="Nomecategoria">
       <input placeholder="Nome da categoria" id="nova-categoria" />
-      <button id="adicionar-categoria">adicionar</button> 
+      <button id="adicionar-categoria">adicionar</button>
     </div>
-    <h1 id="Valor_total">Valor total:</h1>
-    <div id="container-categoria"></div>   
-    
+
+    <!-- CATEGORIAS -->
+
+    <div id="container-categoria"></div>
     <script src="main.js" defer></script>
   </body>
 </html>
-
