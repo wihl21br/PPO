@@ -1,13 +1,14 @@
 * {
     box-sizing: border-box;
-}
-body {
+}body {
     padding: 0.5rem;
     min-height: 100svh;
     width: 100%;
     margin-top: -4rem;
     padding-top: 5rem;
-}#template {
+    background-color: antiquewhite;
+}
+#template {
     display: flex;
     align-items: center;
     height: 10vh;
@@ -16,8 +17,9 @@ body {
     border-radius: 15px;
     background-color: rgb(2, 91, 151);
     color: rgb(253, 253, 253);
-    box-shadow:  10px 10px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
 }
+
 .Nomecategoria {
     display: flex;
     justify-content: center;
@@ -25,52 +27,123 @@ body {
     gap: 10px;
     margin: 40px 0;
 }
+
+
 #nova-categoria {
     width: 300px;
     padding: 8px;
     border: 2px solid rgb(6, 131, 204);
-    
 }
+
 
 #adicionar-categoria {
     padding: 8px 10px;
-    background-color: rgb(6, 131, 204);
+    background-color:rgb(6, 131, 204);
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
-
 #Valor_total {
     margin-left: 8px;
 }
-.Menu {
-    
+
+#painel-orcamento {
     width: 490px;
-    margin-bottom: 25px;
-
-    border: 2px solid rgb(6, 131, 204);
-    border-radius: 10px;
-
-    overflow: hidden;
-    background-color: white;
-}
-.info {
+    margin: 20px auto 30px;
+    padding: 20px;
     display: grid;
-    grid-template-columns: 1fr auto auto;
-    align-items: center;
-    min-height: 80px;
-    padding: 0 15px;
-    background-color: rgb(6, 131, 204);
+    grid-template-columns:1fr 1fr;
+    gap: 15px;
+    background-color: rgb(245, 245, 245);
+border-radius: 15px;
+    box-shadow:5px 5px 15px rgba(0, 0, 0, 0.2);
 }
-#excluir-categoria {
-    padding: 7px 12px;
-    background-color: #d10e0e;
+.lado-orcamento,
+.lado-gasto {
+    display: flex;
+    align-items: center;
+}
+.titulo-orcamento {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+#luz-orcamento {
+    font-size: 40px;
+transition:0.3s ease;
+}
+#painel-orcamento small {
+    color: #666;
+    font-weight: bold;
+}
+#painel-orcamento h2 {
+    margin: 5px 0;
+}
+.config-orcamento {
+    grid-column: 1 / 3;
+    display: flex;
+    gap: 8px;
+}
+#input-orcamento {
+    flex: 1;
+    padding: 8px;
+border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#salvar-orcamento {
+    padding: 8px 15px;
+    background-color:rgb(6, 131, 204);
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
+
+.luz-verde {
+    filter:drop-shadow( 0 0 8px green
+        );
+}
+
+.luz-amarela {
+    filter: drop-shadow(0 0 8px orange);
+}
+
+.luz-vermelha {
+    filter: drop-shadow(0 0 8px red);
+}
+.luz-apagada {filter:grayscale(1);
+    opacity: 0.5;
+}
+.Menu {
+    width: 490px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color:
+        rgb(226, 226, 197);
+
+}
+.info {
+    display: grid;
+    grid-template-columns:1fr auto auto;
+    align-items: center;
+    min-height: 80px;
+    padding: 0 15px;
+background-color:rgb(6, 131, 204);
+}
+
+
+#excluir-categoria {
+   padding:7px 12px;
+   background-color:#d10e0e;
+   color: white;
+   border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
 .personalizar {
     display: flex;
     flex-direction: column;
@@ -78,16 +151,20 @@ body {
     padding: 12px;
 }
 
+
 .personalizar input,
 .personalizar textarea {
     padding: 8px;
-    border: 1px solid #ccc;
+border:1px solid#ccc;
     border-radius: 5px;
 }
+
+
 .personalizar textarea {
     min-height: 60px;
     resize: vertical;
 }
+
 #container-categoria {
     display: flex;
     flex-wrap: wrap;
@@ -95,43 +172,46 @@ body {
     align-items: flex-start;
     gap: 25px;
 }
-#item  {
-    display: flex;
+#item {
+   display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
-    padding: 10px;
+padding: 10px;
     margin-bottom: 8px;
     background-color: white;
-    border: 1px solid #ccc;
+    border:1px solid#ccc;
     border-radius: 5px;
-}
-#excluir-item {
-    padding: 6px 10px;
-    background-color: rgb(6, 131, 204);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
 }
 
-.div-item {
-    min-height: 100px;
-    padding: 15px;
-    border-top: 1px solid #ccc;
+
+#excluir-item {
+padding:6px 10px;
+background-color:rgb(6, 131, 204);
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
 }
+.div-item {
+min-height: 100px;
+ padding: 15px;
+border-top:1px solid#ccc;
+}
+
 #adicionar-item {
-    padding: 8px 15px;
-    background-color: rgb(6, 131, 204);
-    color: white;
+padding:8px 15px;
+background-color:rgb(6, 131, 204);
+color: white;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  border-radius: 5px;
+  cursor: pointer;
 }
 button:hover {
     opacity: 0.50;
 }
-#nome-grupo{
+
+#nome-grupo {
     display: flex;
     justify-content: center;
     align-items: center;
